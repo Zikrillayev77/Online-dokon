@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MinDo'kon — Onlayn Do'kon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">Min<span>Do'kon</span></div>
+      <nav class="nav">
+        <a href="#products">Mahsulotlar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        🛒 Savat <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Sifatli mahsulotlar, qulay narxlar</h1>
+      <p>MinDo'kon — barcha ehtiyojlaringiz uchun bitta manzil</p>
+      <a href="#products" class="btn-primary">Xarid qilishni boshlash</a>
+    </div>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="container">
+      <h2>Mahsulotlar</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Barchasi</button>
+        <button class="filter-btn" data-filter="elektronika">Elektronika</button>
+        <button class="filter-btn" data-filter="kiyim">Kiyim</button>
+        <button class="filter-btn" data-filter="uy">Uy jihozlari</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Biz haqimizda</h2>
+      <p>MinDo'kon — 2024-yildan buyon mijozlarga sifatli mahsulotlarni qulay narxlarda taqdim etib kelmoqda. Bizning maqsadimiz — har bir mijozga eng yaxshi xarid tajribasini berish.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Biz bilan bog'laning</h2>
+      <p>📞 Telefon: +998 90 123 45 67</p>
+      <p>📧 Email: info@mindokon.uz</p>
+      <p>📍 Manzil: Toshkent shahri</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MinDo'kon. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <!-- Savat paneli -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Savat</h3>
+      <button class="close-btn" id="closeCart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Jami:</span>
+        <span id="cartTotal">0 so'm</span>
+      </div>
+      <button class="btn-primary btn-checkout" id="checkoutBtn">Buyurtma berish</button>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
